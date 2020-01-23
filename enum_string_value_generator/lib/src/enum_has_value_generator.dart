@@ -7,14 +7,12 @@ import 'package:enum_string_value_lib/enum_string_value_lib.dart';
 import 'package:source_gen/source_gen.dart';
 
 class EnumHasValueGenerator extends Generator {
-
   final TypeChecker hasValue = TypeChecker.fromRuntime(Value);
 
   @override
   FutureOr<String> generate(LibraryReader library, BuildStep buildStep) {
-    final lib = Library((b) => b
-      ..body.addAll(library.enums.map((e) => Code(_codeForEnum(e))))
-    );
+    final lib = Library(
+        (b) => b..body.addAll(library.enums.map((e) => Code(_codeForEnum(e)))));
     final emitter = DartEmitter();
     return lib.accept(emitter).toString();
   }
@@ -41,8 +39,9 @@ extension _EnumElementExtension on ClassElement {
   Iterable<AnnotatedElement> annotatedWith(TypeChecker checker) {
     return this.fields.map((f) {
       final annotation = checker.firstAnnotationOf(f, throwOnUnresolved: true);
-      return (annotation != null) ? AnnotatedElement(
-          ConstantReader(annotation), f) : null;
+      return (annotation != null)
+          ? AnnotatedElement(ConstantReader(annotation), f)
+          : null;
     }).where((e) => e != null);
   }
 }

@@ -1,3 +1,7 @@
+## 0.0.2+1
+
+- Update dependencies and documents.
+
 ## 0.0.2
 
 - Fixed mistake the format of `build.yaml` and Readme

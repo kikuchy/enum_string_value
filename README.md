@@ -51,11 +51,11 @@ Add packages to your `pubspec.yaml`.
 
 ```yaml
 dependencies:
-  enum_string_value_lib: ^1.0.0
+  enum_string_value_lib: ^1.0.0+1
 
 dev_dependencies:
   build_runner: ^1.7.1
-  enum_string_value_generator: ^0.0.2
+  enum_string_value_generator: ^0.0.2+1
 ```
 
 Add `@Value` annotation to your enum values and `part` directive for the generated file.

@@ -1,6 +1,6 @@
 name: enum_string_value_generator
-description: Now your enum classes have String values!!
-version: 0.0.2
+description: It's append String expressions/values for your own enum classes!
+version: 0.0.2+1
 homepage: https://github.com/kikuchy/enum_string_value
 
 environment:
@@ -11,7 +11,7 @@ dependencies:
   analyzer: ^0.38.5
   source_gen: ^0.9.4+6
   code_builder: ^3.2.1
-  enum_string_value_lib: ^0.0.1
+  enum_string_value_lib: ^1.0.0+1
 
 dev_dependencies:
   pedantic: ^1.8.0
