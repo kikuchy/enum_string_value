@@ -10,20 +10,20 @@ Put `build.yaml` on the root of your project.
 targets:
   $default:
     builders:
-      enum_string_value_generator|enumHasValueBuilder:
+      enum_string_value_generator|enum_string_value:
         generate_for:
-          - lib/*.dart
+          - lib/**/*.dart
 ```
 
 Add packages to your `pubspec.yaml`.
 
 ```yaml
 dependencies:
-  enum_string_value_lib: ^0.0.1
+  enum_string_value_lib: ^1.0.0
 
 dev_dependencies:
   build_runner: ^1.7.2
-  enum_string_value_generator: ^0.0.1
+  enum_string_value_generator: ^0.0.2
 ```
 
 Add `@Value` annotation to your enum values and `part` directive for the generated file.
@@ -43,6 +43,12 @@ enum OsKind {
 
 Run `build_runner` on your project.
 
+for pure Dart project:
 ```
 $ pub run build_runner build
+```
+
+for Flutter project
+```
+$ flutter packages pub run build_runner build
 ```

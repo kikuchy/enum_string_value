@@ -1,3 +1,9 @@
+targets:
+  $default:
+    builders:
+      enum_string_value_generator|enum_string_value:
+        enabled: true
+
 builders:
   enum_string_value:
     import: "package:enum_string_value_generator/enum_string_value_generator.dart"

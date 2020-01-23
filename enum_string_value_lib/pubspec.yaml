@@ -1,8 +1,7 @@
 name: enum_string_value_lib
 description: Now your enum classes have String values!!
-version: 0.0.1
+version: 1.0.0
 homepage: https://github.com/kikuchy/enum_string_value
-author: kikuchy <kikuchy.h@gmail.com>
 
 environment:
   sdk: '>=2.5.0 <3.0.0'
