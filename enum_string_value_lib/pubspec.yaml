@@ -1,6 +1,6 @@
 name: enum_string_value_lib
 description: It's append String expressions/values for your own enum classes!
-version: 1.0.0+1
+version: 1.0.0+2
 homepage: https://github.com/kikuchy/enum_string_value
 
 environment:
