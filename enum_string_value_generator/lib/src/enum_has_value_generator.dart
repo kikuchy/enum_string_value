@@ -37,11 +37,11 @@ class EnumHasValueGenerator extends Generator {
 
 extension _EnumElementExtension on ClassElement {
   Iterable<AnnotatedElement> annotatedWith(TypeChecker checker) {
-    return this.fields.map((f) {
+    return fields.map((f) {
       final annotation = checker.firstAnnotationOf(f, throwOnUnresolved: true);
       return (annotation != null)
           ? AnnotatedElement(ConstantReader(annotation), f)
           : null;
-    }).where((e) => e != null);
+    }).whereType();
   }
 }

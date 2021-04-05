@@ -1,3 +1,8 @@
+## 2.0.0
+
+- Support null-safety
+- Align the version with enum_string_value_generator
+
 ## 0.0.2+3
 
 - Update dependencies.
