@@ -1,6 +1,6 @@
 targets:
   $default:
     builders:
-      enum_string_value_generator|enumHasValueBuilder:
+      enum_string_value_generator|enum_string_value:
         generate_for:
           - lib/*.dart
